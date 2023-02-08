@@ -20,16 +20,16 @@
     <div class="main">
         <nav>
             <div class="mobile-only">
-                <a class="active" href="https://www.google.co.in/imghp">All</a>
+                <a class="active" href="#">All</a>
                 <a href="https://www.google.co.in/imghp">Images</a>
             </div>
             <div class="desktop-only">
                 <div class="left-nav">
                     <a
-                        href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">
+                        href="https://about.google">
                         About
                     </a>
-                    <a href="#">Store</a>
+                    <a href="https://store.google.com">Store</a>
                 </div>
                 <div class="right-nav">
                     <a href="https://mail.google.com/">Gmail</a>
@@ -99,7 +99,7 @@
         <div class="landing-image">
             <img src="assets/logo.png" alt="Google Logo">
         </div>
-        <div class="search-area">
+        <form class="search-area" method="get" action="https://www.google.com/search">
             <div class="search-box">
                 <div class="search-icon">
                     <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -108,9 +108,7 @@
                         </path>
                     </svg>
                 </div>
-                <div class="search-field">
-                    <input type="text">
-                </div>
+                <input type="text" class="search-field" name="q">
                 <div class="search-buttons">
                     <button class="mic">
                         <img src="assets/mic.svg" alt="google mic icon">
@@ -121,10 +119,10 @@
                 </div>
             </div>
             <div class="desktop-only">
-                <div class="search-button">Google Search</div>
-                <div class="search-button">I'm Feeling Lucky</div>
+                <input type="submit" value="Google Search" class="search-button" />
+                <a class="search-button" href="https://www.google.com/doodles">I'm Feeling Lucky</a>
             </div>
-        </div>
+        </form>
         <div class="empty desktop-only"></div>
         <div class="trending-search mobile-only">
             <div class="trending-search-header">Trending Searches</div>
@@ -145,7 +143,7 @@
                     <a href="https://about.google" class="footer-item">About</a>
                     <a href="https://www.google.com/intl/en_in/ads" class="footer-item">Advertising</a>
                     <a href="https://www.google.com/services" class="footer-item">Business</a>
-                    <a href="#" class="desktop-only footer-item">How Search Works</a>
+                    <a href="https://www.google.com/search/howsearchworks" class="desktop-only footer-item">How Search Works</a>
                 </div>
                 <div class="footer-items--right">
                     <a href="https://policies.google.com/privacy" class="footer-item">Privacy</a>
