@@ -35,13 +35,148 @@ body {
     min-height: 50px;
 }
 
-::-webkit-scrollbar-track, ::-webkit-scrollbar-track:hover {
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:hover {
     border: none;
     background: none;
+}
+
+.button {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.button.primary {
+    background: var(--primary-color);
+    border: 1px solid transparent;
+    color: var(--text-primary);
+}
+
+.button.primary:hover {
+    background: var(--primary-variant);
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+.mobile-only {
+    display: block;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 8px;
+}
+
+nav a {
+    color: var(--text-secondary-variant);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 48px;
+    padding: 0 8px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav .mobile-only {
+    display: flex;
+    overflow-x: hidden;
+}
+
+nav .mobile-only a.active {
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
+}
+
+nav .desktop-only {
+    flex: 10 1 auto;
+    justify-content: space-between;
+}
+
+nav .desktop-only a {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+nav .desktop-only a:hover {
+    text-decoration: underline;
+}
+
+.empty {
+    flex: 1 0 auto;
+}
+
+.left-nav,
+.right-nav {
+    height: 48px;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.menu-icon:hover {
+    background-color: rgba(60, 64, 67, .08);
+}
+
+.menu-icon img {
+    height: 24px;
+    width: 24px;
+    margin-top: 8px;
+    color: #5f6368;
+    fill: currentColor;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media(min-width: 600px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: block;
+    }
+
+    nav .mobile-only {
+        display: none;
+    }
+
+    nav .desktop-only {
+        display: flex;
+    }
 }
