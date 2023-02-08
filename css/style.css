@@ -159,7 +159,7 @@ nav .desktop-only a:hover {
     fill: currentColor;
 }
 
-.menu-icon:focus ~ .dropdown {
+.menu-icon:focus~.dropdown {
     visibility: visible;
 }
 
@@ -174,7 +174,7 @@ nav .desktop-only a:hover {
     margin-top: 57px;
     margin-right: 4px;
     padding: 8px 0 8px 16px;
-    border: 1px solid rgba(0,0,0,.2);
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 8px;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
     background: var(--background);
@@ -195,7 +195,7 @@ nav .desktop-only a:hover {
     padding: 6px;
     vertical-align: top;
     list-style-type: none;
-    transition: transform .2s cubic-bezier(.333,0,0,1);
+    transition: transform .2s cubic-bezier(.333, 0, 0, 1);
     background-image: url(../assets/sprites.webp);
     background-size: 84px;
     background-position: 0 calc(var(--n) * -90.5px);
@@ -238,7 +238,7 @@ nav .desktop-only a:hover {
 }
 
 .search-icon {
-    border-radius: 20px 0 0 20px ;
+    border-radius: 20px 0 0 20px;
     padding: 0 4px;
     padding-right: 0;
     color: #9aa0a6;
@@ -371,6 +371,51 @@ nav .desktop-only a:hover {
     padding: 0 8px 0 14px;
 }
 
+footer {
+    background: var(--background-variant);
+}
+
+.carbon {
+    padding: 15px 30px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 15px;
+    color: var(--text-secondary-variant);
+    display: flex;
+    justify-content: center;
+}
+
+.carbon img {
+    margin: 0 6px;
+}
+
+.footer-items {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.footer-items--left,
+.footer-items--right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-item {
+    font-size: 14px;
+    display: inline-block;
+    padding: 15px;
+    white-space: nowrap;
+    color: var(--text-secondary-variant);
+    text-decoration: none;
+}
+
+.footer-item:hover {
+    text-decoration: underline;
+}
+
 .desktop-only {
     display: none;
 }
@@ -421,5 +466,9 @@ nav .desktop-only a:hover {
         padding: 6px 2px;
         height: 46px;
         max-width: 584px;
+    }
+
+    .footer-items {
+        justify-content: space-between;
     }
 }
