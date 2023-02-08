@@ -325,6 +325,52 @@ nav .desktop-only a:hover {
     color: var(--text-secondary);
 }
 
+.trending-search {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.trending-search-header {
+    margin: 0 0 10px 16px;
+    padding: 0 8px 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.trending-search-header::after {
+    content: url(../assets/3dot.svg);
+    height: 20px;
+    min-width: 20px;
+    padding: 0 8px 0 14px;
+    width: 20px;
+}
+
+.trending-search-item {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+    margin: 0 16px;
+    min-height: 52px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.trending-search-item::before {
+    content: '';
+    background: url(../assets/trending.svg) no-repeat 50% 50%;
+    height: 20px;
+    width: 20px;
+    min-width: 20px;
+    padding: 0 8px 0 14px;
+}
+
 .desktop-only {
     display: none;
 }
