@@ -159,6 +159,53 @@ nav .desktop-only a:hover {
     fill: currentColor;
 }
 
+.menu-icon:focus ~ .dropdown {
+    visibility: visible;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 328px;
+    height: 448px;
+    max-height: calc(-57px + 100vh);
+    z-index: 991;
+    margin-top: 57px;
+    margin-right: 4px;
+    padding: 8px 0 8px 16px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    background: var(--background);
+    transition: height 0.3s ease-in-out 0s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    visibility: hidden;
+}
+
+.dropdown-items {
+    display: inline-block;
+    position: relative;
+    height: 84px;
+    width: 84px;
+    padding: 6px;
+    vertical-align: top;
+    list-style-type: none;
+    transition: transform .2s cubic-bezier(.333,0,0,1);
+    background-image: url(../assets/sprites.webp);
+    background-size: 84px;
+    background-position: 0 calc(var(--n) * -90.5px);
+}
+
+.dropdown-items:hover {
+    border-radius: 8px;
+    background-color: #e3edfe;
+}
+
 .desktop-only {
     display: none;
 }
