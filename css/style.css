@@ -424,6 +424,7 @@ footer {
     color: var(--text-secondary-variant);
     display: flex;
     justify-content: center;
+    height: 50px;
 }
 
 .carbon img {
@@ -436,6 +437,10 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     flex-shrink: 0;
+}
+
+.footer-items.desktop-only {
+    justify-content: space-evenly;
 }
 
 .footer-items--left,
@@ -510,7 +515,11 @@ footer {
         max-width: 584px;
     }
 
-    .footer-items {
-        justify-content: space-between;
+    .carbon {
+        border: 0;
+    }
+
+    .footer-items.desktop-only {
+        display: flex;
     }
 }
