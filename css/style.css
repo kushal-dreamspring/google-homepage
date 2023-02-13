@@ -12,7 +12,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Google Sans", "Roboto", Helvetica, Arial, sans-serif;
+    font-family: arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -46,8 +46,8 @@ body {
     letter-spacing: 0.016rem;
     line-height: 1rem;
     margin-left: 10px;
-    margin-right: 8px;
-    min-width: 96px;
+    margin-right: 15px;
+    min-width: 95px;
     padding: 0.563rem 1.438rem;
     text-align: center;
     vertical-align: middle;
@@ -91,7 +91,6 @@ nav {
 
 nav a {
     color: var(--text-secondary-variant);
-    font-family: "Roboto", Arial, sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
     line-height: 3rem;
@@ -264,12 +263,12 @@ nav .desktop-only a:hover {
 
 .search-area {
     text-align: center;
-    padding: 1.25rem;
+    padding: 1.5rem;
 }
 
 .search-box {
     display: flex;
-    border-radius: 20px;
+    border-radius: 25px;
     background: var(--background);
     border: 1px solid var(--border-color);
     margin: auto;
@@ -308,7 +307,6 @@ nav .desktop-only a:hover {
     margin: 0;
     padding: 0 0 0 1.188rem;
     font-size: 1.125rem;
-    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
     color: var(--text-secondary);
     word-wrap: break-word;
     outline: none;
@@ -321,7 +319,7 @@ nav .desktop-only a:hover {
     display: flex;
     flex: 0 0 auto;
     align-items: stretch;
-    margin-right: 0;
+    margin-right: 0.9rem;
 }
 
 .search-buttons button {
@@ -332,8 +330,7 @@ nav .desktop-only a:hover {
     align-items: center;
     border: 0;
     background: transparent;
-    padding: 0 0.625rem;
-    padding: 0 0.75rem;
+    padding-left: 1rem;
 }
 
 .search-buttons img {
@@ -348,9 +345,8 @@ nav .desktop-only a:hover {
     border: 1px solid #f8f9fa;
     border-radius: 4px;
     color: #3c4043;
-    font-family: arial, sans-serif;
     font-size: 0.875rem;
-    margin: 20px 4px;
+    margin: 28px 2.5px;
     padding: 0.25rem 1rem;
     line-height: 1.688rem;
     height: 36px;
@@ -418,6 +414,7 @@ footer {
 }
 
 .carbon {
+    font-family: "Google Sans", "Roboto", Helvetica, Arial, sans-serif;
     padding: 0.938rem 1.875rem;
     border-bottom: 1px solid var(--border-color);
     font-size: 0.938rem;
@@ -453,7 +450,7 @@ footer {
 .footer-item {
     font-size: 0.875rem;
     display: inline-block;
-    padding: 0.938rem;
+    padding: 0.9rem;
     white-space: nowrap;
     color: var(--text-secondary-variant);
     text-decoration: none;
@@ -494,7 +491,7 @@ footer {
         justify-content: end;
         margin: 0 auto;
         width: 100%;
-        height: calc(100vh - 560px);
+        height: calc(100vh - 550px);
     }
 
     .landing-image img {
@@ -505,14 +502,14 @@ footer {
         max-width: 100vw;
         object-fit: contain;
         object-position: center bottom;
-        width: 272px;
+        width: 265px;
         aspect-ratio: auto 272 / 92;
     }
 
     .search-box {
         padding: 0.375rem 0.125rem;
         height: 46px;
-        max-width: 584px;
+        max-width: 572px;
     }
 
     .carbon {
@@ -521,5 +518,6 @@ footer {
 
     .footer-items.desktop-only {
         display: flex;
+        justify-content: space-evenly;
     }
 }
