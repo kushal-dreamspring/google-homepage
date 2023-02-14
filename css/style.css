@@ -191,7 +191,7 @@ nav .desktop-only a:hover {
     font-size: 14px;
     letter-spacing: 0.09px;
     line-height: 18px;
-    overflow: hidden;
+    overflow: revert;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 76px;
@@ -202,14 +202,15 @@ nav .desktop-only a:hover {
     content: '';
     display: inline-block;
     position: relative;
-    height: 40px;
-    width: 40px;
+    height: 72px;
+    width: 72px;
     padding: 6px;
+    padding-bottom: 0;
     vertical-align: top;
     transition: transform .2s cubic-bezier(.333, 0, 0, 1);
     background-image: url(../assets/sprites.webp);
-    background-size: 53.33px;
-    background-position: 0 calc(var(--n) * -57.5px);
+    background-size: 78px;
+    background-position: 0 calc(var(--n) * -84px);
 }
 
 .dropdown-items:hover {
