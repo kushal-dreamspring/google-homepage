@@ -202,15 +202,15 @@ nav .desktop-only a:hover {
   content: "";
   display: inline-block;
   position: relative;
-  height: 72px;
-  width: 72px;
-  padding: 6px;
-  padding-bottom: 0;
+  height: 53.33px;
+  width: 53.33px;
+  padding: 0;
+  margin-top: 1rem;
   vertical-align: top;
   transition: transform 0.2s cubic-bezier(0.333, 0, 0, 1);
   background-image: url(../images/sprites.webp);
-  background-size: 78px;
-  background-position: 0 calc(var(--n) * -84px);
+  background-size: 53.33px;
+  background-position: 0 calc(var(--n) * -57.5px);
 }
 
 .dropdown-items:hover {
